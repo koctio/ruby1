@@ -1,0 +1,17 @@
+<h1>На сегодня</h1>
+
+<table border="1">
+  <% @tovars.each do |tovar| %>
+    <tr>
+      <td><%=tovar.name %></td>
+      <td><%=tovar.article %></td>
+      <td><%=tovar.comment %></td>
+      <td><%=tovar.created_at %></td>
+      <td><%=tovar.updated_at %></td>
+      <td>Подробно</td>
+      <td>Редактировать</td>
+      <td>Удалить</td>
+    </tr>
+  <% end %>
+</table>
+<p>Добавить</p>
