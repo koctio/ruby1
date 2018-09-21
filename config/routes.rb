@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   #CRUD
   #resources :tovar
-  get 'tovar(.:format)'=>'tovar#index', as: 'tovars'
+  get 'tovar'=>'tovar#index', as: 'tovars'
   get 'tovar/:id(.:format)'=>'tovar#show'
   post 'tovar/:id(.:format)'=>'tovar#edit'
   
