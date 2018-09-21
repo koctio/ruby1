@@ -8,11 +8,11 @@
       <td><%=tovar.comment %></td>
       <td><%=tovar.created_at %></td>
       <td><%=tovar.updated_at %></td>
-      <td>Подробно</td>
+      <td><%#= link_to 'Подр.', controller:'tovar', action:'show' %></td>
+      <td><%= link_to 'show', "tovar/#{tovar.id}" %></td>
       <td>Редактировать</td>
       <td>Удалить</td>
     </tr>
   <% end %>
 </table>
-<p>Добавить</p>
 <p>Добавить</p>

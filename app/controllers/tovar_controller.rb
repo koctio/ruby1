@@ -4,4 +4,8 @@ class TovarController < ApplicationController
     @tovars=Tovar.all
   end
   
+  def show
+    @tovar=Tovar.find(params[:id])
+  end
+  
 end
