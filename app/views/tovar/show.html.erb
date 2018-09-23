@@ -5,6 +5,9 @@
     <tr><td>Наименование</td><td><%=@tovar.name%></td></tr>
     <tr><td>Артикул</td><td><%=@tovar.article%></td></tr>
     <tr><td>Примечание</td><td><%=@tovar.comment%></td></tr>
+    <tr><td>created_at</td><td><%=@tovar.created_at%></td></tr>
+    <tr><td>updated_at</td><td><%=@tovar.updated_at%></td></tr>
+    <tr><td>Скрытый</td><td><%=@tovar.hidden%></td></tr>
 </table>
-<p>Редактировать</p>
-<p><%=link_to 'Назад к списку', tovars_path %></p>
+<p><%=link_to 'Редактировать', edit_tovar_path(@tovar) %></p>
+<p><%=link_to 'Назад к списку', tovar_index_path %></p>
