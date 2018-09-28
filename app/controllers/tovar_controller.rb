@@ -6,6 +6,7 @@ class TovarController < ApplicationController
   
   def show
     @tovar=Tovar.find(params[:id])
+    #render json: @tovar
   end
   
   def edit

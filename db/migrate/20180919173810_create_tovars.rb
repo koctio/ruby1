@@ -4,7 +4,7 @@ class CreateTovars < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :article
       t.string :comment
-
+      #t.belongs_to :group
       t.timestamps
     end
   end
